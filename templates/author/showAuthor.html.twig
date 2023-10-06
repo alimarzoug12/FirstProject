@@ -1,0 +1,46 @@
+{% if  i.username =='Victor Hugo' %}
+<table border="1">
+    <tr>
+        <td>Nom</td>
+        <td>Photo</td>
+        <td>email</td>
+        <td>nb_books</td>
+    </tr>
+    <tr>
+        <td>Victor Hugo</td>
+        <td><img src="{{ asset('imgs/victor_hugo.jpg') }}" alt="victor_hugo" width="100px" height="100px"></td>
+        <td>victor.hugo@gmail.com</td>
+        <td>100</td>
+    </tr>
+    </table>
+    {% elseif i.username =='William Shakespeare' %}
+    <table border="1">
+    <tr>
+        <td>Nom</td>
+        <td>Photo</td>
+        <td>email</td>
+        <td>nb_books</td>
+    </tr>
+    <tr>
+        <td>William Shakespeare</td>
+        <td><img src="{{ asset('imgs/shakespeare.jpg') }}" alt="shakespeare" width="100px" height="100px"></td>
+        <td>william.shakespeare@gmail.com</td>
+        <td>200</td>
+    </tr>
+    </table>
+    {% elseif i.username =='Taha Hussein' %}
+    <table border="1">
+    <tr>
+        <td>Nom</td>
+        <td>Photo</td>
+        <td>email</td>
+        <td>nb_books</td>
+    </tr>
+    <tr>
+        <td>Taha Hussein</td>
+        <td><img src="{{ asset('imgs/taha_hussein.jpg') }}" alt="taha_hussein" width="100px" height="100px"></td>
+        <td>taha.hussein@gmail.com</td>
+        <td>300</td>
+    </tr>
+    </table>
+{% endif %}
